@@ -1,377 +1,459 @@
-<!DOCTYPE HTML>
-<!--
-	ZeroFour by HTML5 UP
-	html5up.net | @n33co
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
+<!DOCTYPE html>
 <html>
-	<head>
-		<title>ZeroFour by HTML5 UP</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-	</head>
-	<body class="homepage">
-		<div id="page-wrapper">
+  <head>
+    <meta charset="utf-8">
+    <title>Section scroller one-page template</title>
+    <meta name="description" content="This one page example has a fixed navbar and full page height sections. Each section is vertically centered on larger screens, and then stack responsively on smaller screens. Scrollspy is used to activate the current menu item. This layout also has a contact form example. Uses animate.css, FontAwesome, Google Fonts (Lato and Bitter) and Bootstrap." />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Codeply">
 
-			<!-- Header -->
-				<div id="header-wrapper">
-					<div class="container">
 
-						<!-- Header -->
-							<header id="header">
-								<div class="inner">
 
-									<!-- Logo -->
-										<h1><a href="index.html" id="logo">ZeroFour</a></h1>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" rel="stylesheet" />
 
-									<!-- Nav -->
-										<nav id="nav">
-											<ul>
-												<li class="current_page_item"><a href="index.html">Home</a></li>
-												<li>
-													<a href="#">Dropdown</a>
-													<ul>
-														<li><a href="#">Lorem ipsum dolor</a></li>
-														<li><a href="#">Magna phasellus</a></li>
-														<li>
-															<a href="#">Phasellus consequat</a>
-															<ul>
-																<li><a href="#">Lorem ipsum dolor</a></li>
-																<li><a href="#">Phasellus consequat</a></li>
-																<li><a href="#">Magna phasellus</a></li>
-																<li><a href="#">Etiam dolore nisl</a></li>
-															</ul>
-														</li>
-														<li><a href="#">Veroeros feugiat</a></li>
-													</ul>
-												</li>
-												<li><a href="left-sidebar.html">Left Sidebar</a></li>
-												<li><a href="right-sidebar.html">Right Sidebar</a></li>
-												<li><a href="no-sidebar.html">No Sidebar</a></li>
-											</ul>
-										</nav>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body >
+    <nav class="navbar navbar-trans navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapsible">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand text-danger" href="#">BRAND</a>
+        </div>
+        <div class="navbar-collapse collapse" id="navbar-collapsible">
+            <ul class="nav navbar-nav navbar-left">
+                <li><a href="#section1">Start</a></li>
+                <li><a href="#section2">Next</a></li>
+                <li><a href="#section3">Then</a></li>
+                <li><a href="#section4">Form</a></li>
+                <li><a href="#section5">More</a></li>
+                <li><a href="#section6">Last</a></li>
+                <li>&nbsp;</li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-heart-o fa-lg"></i></a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
 
-								</div>
-							</header>
-
-						<!-- Banner -->
-							<div id="banner">
-								<h2><strong>ZeroFour:</strong> A free responsive site template
-								<br />
-								built on HTML5 and CSS3 by <a href="http://html5up.net">HTML5 UP</a></h2>
-								<p>Does this statement make you want to click the big shiny button?</p>
-								<a href="#" class="button big icon fa-check-circle">Yes it does</a>
-							</div>
-
-					</div>
-				</div>
-
-			<!-- Main Wrapper -->
-				<div id="main-wrapper">
-					<div class="wrapper style1">
-						<div class="inner">
-
-							<!-- Feature 1 -->
-								<section class="container box feature1">
-									<div class="row">
-										<div class="12u">
-											<header class="first major">
-												<h2>This is an important heading</h2>
-												<p>And this is where we talk about why we’re <strong>pretty awesome</strong> ...</p>
-											</header>
-										</div>
-									</div>
-									<div class="row">
-										<div class="4u 12u(mobile)">
-											<section>
-												<a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
-												<header class="second icon fa-user">
-													<h3>Here's a Heading</h3>
-													<p>And a subtitle</p>
-												</header>
-											</section>
-										</div>
-										<div class="4u 12u(mobile)">
-											<section>
-												<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
-												<header class="second icon fa-cog">
-													<h3>Also a Heading</h3>
-													<p>And another subtitle</p>
-												</header>
-											</section>
-										</div>
-										<div class="4u 12u(mobile)">
-											<section>
-												<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
-												<header class="second icon fa-bar-chart-o">
-													<h3>Another Heading</h3>
-													<p>And yes, a subtitle</p>
-												</header>
-											</section>
-										</div>
-									</div>
-									<div class="row">
-										<div class="12u">
-											<p>Phasellus quam turpis, feugiat sit amet ornare in, hendrerit in lectus. Praesent semper
-											bibendum ipsum, et tristique augue fringilla eu. Vivamus id risus vel dolor auctor euismod
-											quis eget mi. Etiam eu ante risus. Aliquam erat volutpat. Aliquam luctus mattis lectus sit
-											amet pulvinar. Nam nec turpis.</p>
-										</div>
-									</div>
-								</section>
-
-						</div>
-					</div>
-					<div class="wrapper style2">
-						<div class="inner">
-
-							<!-- Feature 2 -->
-								<section class="container box feature2">
-									<div class="row">
-										<div class="6u 12u(mobile)">
-											<section>
-												<header class="major">
-													<h2>And this is a subheading</h2>
-													<p>It’s important but clearly not *that* important</p>
-												</header>
-												<p>Phasellus quam turpis, feugiat sit amet ornare in, hendrerit in lectus.
-												Praesent semper mod quis eget mi. Etiam eu ante risus. Aliquam erat volutpat.
-												Aliquam luctus et mattis lectus sit amet pulvinar. Nam turpis nisi
-												consequat etiam.</p>
-												<footer>
-													<a href="#" class="button medium icon fa-arrow-circle-right">Let's do this</a>
-												</footer>
-											</section>
-										</div>
-										<div class="6u 12u(mobile)">
-											<section>
-												<header class="major">
-													<h2>This is also a subheading</h2>
-													<p>And is as unimportant as the other one</p>
-												</header>
-												<p>Phasellus quam turpis, feugiat sit amet ornare in, hendrerit in lectus.
-												Praesent semper mod quis eget mi. Etiam eu ante risus. Aliquam erat volutpat.
-												Aliquam luctus et mattis lectus sit amet pulvinar. Nam turpis nisi
-												consequat etiam.</p>
-												<footer>
-													<a href="#" class="button medium alt icon fa-info-circle">Wait, what?</a>
-												</footer>
-											</section>
-										</div>
-									</div>
-								</section>
-
-							</div>
-					</div>
-					<div class="wrapper style3">
-						<div class="inner">
-							<div class="container">
-								<div class="row">
-									<div class="8u 12u(mobile)">
-
-										<!-- Article list -->
-											<section class="box article-list">
-												<h2 class="icon fa-file-text-o">Recent Posts</h2>
-
-												<!-- Excerpt -->
-													<article class="box excerpt">
-														<a href="#" class="image left"><img src="images/pic04.jpg" alt="" /></a>
-														<div>
-															<header>
-																<span class="date">July 24</span>
-																<h3><a href="#">Repairing a hyperspace window</a></h3>
-															</header>
-															<p>Phasellus quam turpis, feugiat sit amet ornare in, hendrerit in lectus
-															semper mod quisturpis nisi consequat etiam lorem. Phasellus quam turpis,
-															feugiat et sit amet ornare in, hendrerit in lectus semper mod quis eget mi dolore.</p>
-														</div>
-													</article>
-
-												<!-- Excerpt -->
-													<article class="box excerpt">
-														<a href="#" class="image left"><img src="images/pic05.jpg" alt="" /></a>
-														<div>
-															<header>
-																<span class="date">July 18</span>
-																<h3><a href="#">Adventuring with a knee injury</a></h3>
-															</header>
-															<p>Phasellus quam turpis, feugiat sit amet ornare in, hendrerit in lectus
-															semper mod quisturpis nisi consequat etiam lorem. Phasellus quam turpis,
-															feugiat et sit amet ornare in, hendrerit in lectus semper mod quis eget mi dolore.</p>
-														</div>
-													</article>
-
-												<!-- Excerpt -->
-													<article class="box excerpt">
-														<a href="#" class="image left"><img src="images/pic06.jpg" alt="" /></a>
-														<div>
-															<header>
-																<span class="date">July 14</span>
-																<h3><a href="#">Preparing for Y2K38</a></h3>
-															</header>
-															<p>Phasellus quam turpis, feugiat sit amet ornare in, hendrerit in lectus
-															semper mod quisturpis nisi consequat etiam lorem. Phasellus quam turpis,
-															feugiat et sit amet ornare in, hendrerit in lectus semper mod quis eget mi dolore.</p>
-														</div>
-													</article>
-
-											</section>
-									</div>
-									<div class="4u 12u(mobile)">
-
-										<!-- Spotlight -->
-											<section class="box spotlight">
-												<h2 class="icon fa-file-text-o">Spotlight</h2>
-												<article>
-													<a href="#" class="image featured"><img src="images/pic07.jpg" alt=""></a>
-													<header>
-														<h3><a href="#">Neural Implants</a></h3>
-														<p>The pros and cons. Mostly cons.</p>
-													</header>
-													<p>Phasellus quam turpis, feugiat sit amet ornare in, hendrerit in lectus semper mod
-													quisturpis nisi consequat ornare in, hendrerit in lectus semper mod quis eget mi quat etiam
-													lorem. Phasellus quam turpis, feugiat sed et lorem ipsum dolor consequat dolor feugiat sed
-													et tempus consequat etiam.</p>
-													<p>Lorem ipsum dolor quam turpis, feugiat sit amet ornare in, hendrerit in lectus semper
-													mod quisturpis nisi consequat etiam lorem sed amet quam turpis.</p>
-													<footer>
-														<a href="#" class="button alt icon fa-file-o">Continue Reading</a>
-													</footer>
-												</article>
-											</section>
-
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-			<!-- Footer Wrapper -->
-				<div id="footer-wrapper">
-					<footer id="footer" class="container">
-						<div class="row">
-							<div class="3u 12u(mobile)">
-
-								<!-- Links -->
-									<section>
-										<h2>Filler Links</h2>
-										<ul class="divided">
-											<li><a href="#">Quam turpis feugiat dolor</a></li>
-											<li><a href="#">Amet ornare in hendrerit </a></li>
-											<li><a href="#">Semper mod quisturpis nisi</a></li>
-											<li><a href="#">Consequat etiam phasellus</a></li>
-											<li><a href="#">Amet turpis, feugiat et</a></li>
-											<li><a href="#">Ornare hendrerit lectus</a></li>
-											<li><a href="#">Semper mod quis et dolore</a></li>
-											<li><a href="#">Amet ornare in hendrerit</a></li>
-											<li><a href="#">Consequat lorem phasellus</a></li>
-											<li><a href="#">Amet turpis, feugiat amet</a></li>
-											<li><a href="#">Semper mod quisturpis</a></li>
-										</ul>
-									</section>
-
-							</div>
-							<div class="3u 12u(mobile)">
-
-								<!-- Links -->
-									<section>
-										<h2>More Filler</h2>
-										<ul class="divided">
-											<li><a href="#">Quam turpis feugiat dolor</a></li>
-											<li><a href="#">Amet ornare in in lectus</a></li>
-											<li><a href="#">Semper mod sed tempus nisi</a></li>
-											<li><a href="#">Consequat etiam phasellus</a></li>
-										</ul>
-									</section>
-
-								<!-- Links -->
-									<section>
-										<h2>Even More Filler</h2>
-										<ul class="divided">
-											<li><a href="#">Quam turpis feugiat dolor</a></li>
-											<li><a href="#">Amet ornare hendrerit lectus</a></li>
-											<li><a href="#">Semper quisturpis nisi</a></li>
-											<li><a href="#">Consequat lorem phasellus</a></li>
-										</ul>
-									</section>
-
-							</div>
-							<div class="6u 12u(mobile)">
-
-								<!-- About -->
-									<section>
-										<h2><strong>ZeroFour</strong> by HTML5 UP</h2>
-										<p>Hi! This is <strong>ZeroFour</strong>, a free, fully responsive HTML5 site
-										template by <a href="http://n33.co/">AJ</a> for <a href="http://html5up.net/">HTML5 UP</a>.
-										It's <a href="http://html5up.net/license/">Creative Commons Attribution</a>
-										licensed so use it for any personal or commercial project (just credit us
-										for the design!).</p>
-										<a href="#" class="button alt icon fa-arrow-circle-right">Learn More</a>
-									</section>
-
-								<!-- Contact -->
-									<section>
-										<h2>Get in touch</h2>
-										<div>
-											<div class="row">
-												<div class="6u 12u(mobile)">
-													<dl class="contact">
-														<dt>Twitter</dt>
-														<dd><a href="#">@untitled-corp</a></dd>
-														<dt>Facebook</dt>
-														<dd><a href="#">facebook.com/untitled</a></dd>
-														<dt>WWW</dt>
-														<dd><a href="#">untitled.tld</a></dd>
-														<dt>Email</dt>
-														<dd><a href="#">user@untitled.tld</a></dd>
-													</dl>
-												</div>
-												<div class="6u 12u(mobile)">
-													<dl class="contact">
-														<dt>Address</dt>
-														<dd>
-															1234 Fictional Rd<br />
-															Nashville, TN 00000-0000<br />
-															USA
-														</dd>
-														<dt>Phone</dt>
-														<dd>(000) 000-0000</dd>
-													</dl>
-												</div>
-											</div>
-										</div>
-									</section>
-
-							</div>
-						</div>
-						<div class="row">
-							<div class="12u">
-								<div id="copyright">
-									<ul class="menu">
-										<li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</footer>
-				</div>
-
+<section class="container-fluid" id="section1">
+    <div class="v-center">
+        <h1 class="text-center">Just One Page</h1>
+        <h2 class="text-center lato animate slideInDown">Change It To Say <b>Something</b> Unique</h2>
+        <p class="text-center">
+            <br>
+            <a href="#" class="btn btn-danger btn-lg btn-huge lato" data-toggle="modal" data-target="#myModal">Get Free Membership</a>
+        </p>
+    </div>
+    <a href="#section2">
+		<div class="scroll-down bounceInDown animated">
+            <span>
+                <i class="fa fa-angle-down fa-2x"></i>
+            </span>
 		</div>
+        </a>
+</section>
 
-		<!-- Scripts -->
+<section class="container-fluid" id="section2">
+    <div class="container v-center">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="row">
+                    <div class="col-sm-12 text-center">
+                        <div class="panel panel-default slideInLeft animate">
+                            <div class="panel-heading">
+                            <h3>Robust</h3></div>
+                            <div class="panel-body">
+                                <p>There is other content and snippets of details or features that can be placed here..</p>
+                                <hr>GO
+                                <hr>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 text-center">
+                <div class="row">
+                    <div class="col-sm-12 text-center">
+                        <div class="panel panel-default slideInUp animate">
+                            <div class="panel-heading">
+                            <h3>Simple</h3></div>
+                            <div class="panel-body">
+                                <p>There is other content and snippets of details or features that can be placed here..</p>
+                                <hr>GO
+                                <hr>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 text-center">
+                <div class="row">
+                    <div class="col-sm-12 text-center">
+                        <div class="panel panel-default slideInRight animate">
+                            <div class="panel-heading">
+                            <h3>Clean</h3></div>
+                            <div class="panel-body">
+                                <p>There is other content and snippets of details or features that can be placed here..</p>
+                                <hr>GO
+                                <hr>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--/row-->
+        <div class="row">
+            <br>
+        </div>
+    </div>
+    <!--/container-->
+</section>
 
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.dropotron.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/skel-viewport.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
+<section>
+    <div class="container-fluid v-center">
+        <div class="row">
+            <div class="col-sm-2 col-sm-offset-2 col-xs-6">
+                <div class="text-center">
+                    <a href="">
+                        <img style="width:100px;" class="img-circle img-responsive img-thumbnail" src="//placehold.it/100/444">
+                    </a>
+                    <h3 class="text-center"></h3>
+                </div>
+            </div>
+            <div class="col-sm-2 col-xs-6">
+                <div class="text-center">
+                    <a href="">
+                        <img style="width:100px;" class="img-circle img-responsive img-thumbnail" src="//placehold.it/100/444">
+                    </a>
+                    <h3 class="text-center"></h3>
+                </div>
+            </div>
+            <div class="col-sm-2 col-xs-6">
+                <div class="text-center">
+                    <a href="">
+                        <img style="width:100px;" class="img-circle img-responsive img-thumbnail" src="//placehold.it/100/444">
+                    </a>
+                    <h3 class="text-center"></h3>
+                </div>
+            </div>
+            <div class="col-sm-2 col-xs-6">
+                <div class="text-center">
+                    <a href="">
+                        <img style="width:100px;" class="img-circle img-responsive img-thumbnail" src="//placehold.it/100/444">
+                    </a>
+                    <h3 class="text-center"></h3>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2 col-sm-offset-2 col-xs-6">
+                <div class="text-center">
+                    <a href="">
+                        <img style="width:100px;" class="img-circle img-responsive img-thumbnail" src="//placehold.it/100/444">
+                    </a>
+                    <h3 class="text-center"></h3>
+                </div>
+            </div>
+            <div class="col-sm-2 col-xs-6">
+                <div class="text-center">
+                    <a href="">
+                        <img style="width:100px;" class="img-circle img-responsive img-thumbnail" src="//placehold.it/100/444">
+                    </a>
+                    <h3 class="text-center"></h3>
+                </div>
+            </div>
+            <div class="col-sm-2 col-xs-6">
+                <div class="text-center">
+                    <a href="">
+                        <img style="width:100px;" class="img-circle img-responsive img-thumbnail" src="//placehold.it/100/444">
+                    </a>
+                    <h3 class="text-center"></h3>
+                </div>
+            </div>
+            <div class="col-sm-2 col-xs-6">
+                <div class="text-center">
+                    <a href="">
+                        <img style="width:100px;" class="img-circle img-responsive img-thumbnail" src="//placehold.it/100/444">
+                    </a>
+                    <h3 class="text-center"></h3>
+                </div>
+            </div>
+        </div>
+        <!--/row-->
+    </div>
+</section>
 
-	</body>
+<section class="container-fluid" id="section3">
+    <h1 class="text-center">A Bootstrap Foundation</h1>
+    <div class="row">
+        <div class="col-sm-6 col-sm-offset-3">
+            <h3 class="text-center lato slideInUp animate">That <strong>Doesn't</strong> Have to Look Like Bootstrap.</h3>
+            <br>
+            <div class="row">
+                <div class="col-xs-4 col-xs-offset-1">Some brand-tacular designs even have home page content that is taller that 12,000 pixels. That's a lotta content.</div>
+                <div class="col-xs-2"></div>
+                <div class="col-xs-4 text-right">Anyhoo, this is just some random blurb of text, and Bootply.com is a playground and code editor for Bootstrap.</div>
+            </div>
+            <br>
+            <p class="text-center">
+                <img src="//placehold.it/444x222/444/FFF" class="img-responsive thumbnail center-block ">
+            </p>
+        </div>
+    </div>
+</section>
+
+<section id="section4">
+    <div class="container v-center">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="text-center">Make Contact</h1>
+                <hr>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-9">
+                <div class="row form-group">
+                    <div class="col-sm-3">
+                        <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First Name" required="">
+                    </div>
+                    <div class="col-sm-3">
+                        <input type="text" class="form-control" id="middleName" name="firstName" placeholder="Middle Name" required="">
+                    </div>
+                    <div class="col-sm-4">
+                        <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last Name" required="">
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <div class="col-sm-5">
+                        <input type="email" class="form-control" name="email" placeholder="Email" required="">
+                    </div>
+                    <div class="col-sm-5">
+                        <input type="email" class="form-control" name="phone" placeholder="Phone" required="">
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <div class="col-sm-10">
+                        <input type="homepage" class="form-control" placeholder="Website URL" required="">
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <div class="col-sm-10">
+                        <button class="btn btn-default btn-lg pull-right">Contact Us</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 pull-right">
+                <address>
+              <strong>Some LLC</strong><br>
+              795 Folsom Ave, Suite 600<br>
+              Newport, RI 94107<br>
+              P: (123) 456-7890
+            </address>
+                <address>
+              <strong>Email Us</strong><br>
+              <a href="mailto:#">first.last@example.com</a>
+            </address>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="container-fluid" id="section5">
+    <div class="row">
+        <div class="col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
+            <h2 class="text-center lato">Section with Marketing Highlights.</h2>
+            <hr>
+            <div class="media">
+                <h3>Boom</h3>
+                <div class="media-left">
+                    <img src="//placehold.it/100">
+                </div>
+                <div class="media-body media-middle">
+                    <p>Some brand-tacular designs even have home page content that is taller that 12,000 pixels. That's a lotta content Lorem ipsum dolor sit amet, adipiscing elit.</p>
+                </div>
+            </div>
+            <hr>
+            <div class="media">
+                <h3>Boom</h3>
+                <div class="media-body media-middle">
+                    <p>Offset right home page content that is taller that 12,000 pixels. That's a lotta content Lorem ipsum dolor sit amet, adipiscing elit.</p>
+                </div>
+                <div class="media-right">
+                    <img src="//placehold.it/100">
+                </div>
+            </div>
+            <hr>
+            <div class="media">
+                <h3>Boom</h3>
+                <div class="media-left">
+                    <img src="//placehold.it/100">
+                </div>
+                <div class="media-body media-middle">
+                    <p>Some brand-tacular designs even have home page content that is taller that 12,000 pixels. That's a lotta content Lorem ipsum dolor sit amet, adipiscing elit.</p>
+                </div>
+            </div>
+            <hr>
+            <div class="media">
+                <h3>Boom</h3>
+                <div class="media-body media-middle">
+                    <p>Offset right home page content that is taller that 12,000 pixels. That's a lotta content Lorem ipsum dolor sit amet, adipiscing elit.</p>
+                </div>
+                <div class="media-right">
+                    <img src="//placehold.it/100">
+                </div>
+            </div>
+            <hr>
+            <div class="media">
+                <h3>Boom</h3>
+                <div class="media-left">
+                    <img src="//placehold.it/100">
+                </div>
+                <div class="media-body media-middle">
+                    <p>Some brand-tacular designs even have home page content that is taller that 12,000 pixels. That's a lotta content Lorem ipsum dolor sit amet, adipiscing elit.</p>
+                </div>
+            </div>
+            <hr>
+            <div class="media">
+                <h3>Boom</h3>
+                <div class="media-body media-middle">
+                    <p>Offset right home page content that is taller that 12,000 pixels. That's a lotta content Lorem ipsum dolor sit amet, adipiscing elit.</p>
+                </div>
+                <div class="media-right">
+                    <img src="//placehold.it/100">
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="container-fluid" id="section6">
+    <ul class="row list-unstyled">
+        <li class="col-md-6 col-md-offset-1 col-xs-10 col-xs-offset-1">
+            <h3 class="text-center">This will scale down proportionately.</h3>
+        </li>
+        <li class="col-md-3 col-md-offset-0 col-xs-10 col-xs-offset-1 text-center">
+            <a href="" class="center-block btn btn-default btn-lg btn-huge lato animate slideInRight">Responsive Design</a>
+        </li>
+    </ul>
+</section>
+
+<section class="container-fluid" id="section7">
+    <div class="row">
+        <!--fontawesome icons-->
+        <div class="col-sm-1 col-sm-offset-3 col-xs-4 text-center">
+            <i class="fa fa-github fa-4x"></i>
+        </div>
+        <div class="col-sm-1 col-xs-4 text-center">
+            <i class="fa fa-foursquare fa-4x"></i>
+        </div>
+        <div class="col-sm-1 col-xs-4 text-center">
+            <i class="fa fa-pinterest fa-4x"></i>
+        </div>
+        <div class="col-sm-1 col-xs-4 text-center">
+            <i class="fa fa-google-plus fa-4x"></i>
+        </div>
+        <div class="col-sm-1 col-xs-4 text-center">
+            <i class="fa fa-twitter fa-4x"></i>
+        </div>
+        <div class="col-sm-1 col-xs-4 text-center">
+            <i class="fa fa-dribbble fa-4x"></i>
+        </div>
+    </div>
+</section>
+
+<footer id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-6 col-sm-6 col-md-3 column">
+                <h4>Information</h4>
+                <ul class="nav">
+                    <li><a href="about-us.html">Products</a></li>
+                    <li><a href="about-us.html">Services</a></li>
+                    <li><a href="about-us.html">Benefits</a></li>
+                    <li><a href="elements.html">Developers</a></li>
+                </ul>
+            </div>
+            <div class="col-xs-6 col-md-3 column">
+                <h4>Follow Us</h4>
+                <ul class="nav">
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Google+</a></li>
+                    <li><a href="#">Pinterest</a></li>
+                </ul>
+            </div>
+            <div class="col-xs-6 col-md-3 column">
+                <h4>Contact Us</h4>
+                <ul class="nav">
+                    <li><a href="#">Email</a></li>
+                    <li><a href="#">Headquarters</a></li>
+                    <li><a href="#">Management</a></li>
+                    <li><a href="#">Support</a></li>
+                </ul>
+            </div>
+            <div class="col-xs-6 col-md-3 column">
+                <h4>Customer Service</h4>
+                <ul class="nav">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Delivery Information</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms &amp; Conditions</a></li>
+                </ul>
+            </div>
+        </div>
+        <!--/row-->
+        <p class="text-right">©2015</p>
+    </div>
+</footer>
+
+<div class="scroll-up">
+	<a href="#"><i class="fa fa-angle-up"></i></a>
+</div>
+
+<div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h2 class="text-center"><img src="//placehold.it/110" class="img-circle"><br>Login</h2>
+            </div>
+            <div class="modal-body row">
+                <h6 class="text-center">COMPLETE THESE FIELDS TO SIGN UP</h6>
+                <form class="col-md-10 col-md-offset-1 col-xs-12 col-xs-offset-0">
+                    <div class="form-group">
+                        <input type="text" class="form-control input-lg" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control input-lg" placeholder="Password">
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-danger btn-lg btn-block">Sign In</button>
+                        <span class="pull-right"><a href="#">Register</a></span><span><a href="#">Need help?</a></span>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <h6 class="text-center"><a href="">Privacy is important to us. Click here to read why.</a></h6>
+            </div>
+        </div>
+    </div>
+</div>
+    <!--scripts loaded here-->
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    
+    <script src="js/scripts.js"></script>
+  </body>
 </html>
