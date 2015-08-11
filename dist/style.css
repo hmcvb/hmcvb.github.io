@@ -8,7 +8,7 @@
 html,
 body {
   height: 100%;
-  background: center no-repeat fixed url('dist/img/boston-skyline.jpg');
+  background: center no-repeat fixed url('/dist/img/volleyball.jpg');
   background-size: cover;
   color: #444;
   font-family: 'Lato', sans-serif;
