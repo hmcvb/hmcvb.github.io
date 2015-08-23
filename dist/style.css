@@ -113,7 +113,7 @@ a.text-danger {
 }
 #contact-text {
   overflow: visible;
-  resize: false;
+  resize: none;
 }
 #contact-submit {
   width: 100%;
