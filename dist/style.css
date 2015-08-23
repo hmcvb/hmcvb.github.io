@@ -44,6 +44,9 @@ a.text-danger {
   padding: 17px 22px;
   font-size: 22px;
 }
+.btn-full {
+  width: 100%;
+}
 .lato {
   font-family: 'Lato', sans-serif;
 }
@@ -117,9 +120,6 @@ a.text-danger {
 #contact-text {
   overflow: visible;
   resize: none;
-}
-#contact-submit {
-  width: 100%;
 }
 section {
   padding-top: 70px;
