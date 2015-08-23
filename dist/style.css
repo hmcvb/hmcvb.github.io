@@ -32,6 +32,7 @@ p {
 .well,
 .panel {
   border-radius: 0;
+  color: #444;
 }
 .btn-danger {
   background-color: #c4161c;
