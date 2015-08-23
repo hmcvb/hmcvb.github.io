@@ -32,6 +32,9 @@ p {
 .well,
 .panel {
   border-radius: 0;
+  color: #000;
+}
+.panel-body p {
   color: #444;
 }
 .btn-danger {
