@@ -1,4 +1,4 @@
-/*! hmcvb.github.io - v1.0.0 - 2015-08-10
+/*! hmcvb.github.io - v1.0.0 - 2015-08-23
 * https://github.com/hmcvb/hmcvb.github.io#readme
 * Copyright (c) 2015 James Baskerville; Licensed under ISC 
 * Permission to use, copy, modify, and/or distribute this software for any purpose with or without fee is hereby granted, provided that the above copyright notice and this permission notice appear in all copies.
