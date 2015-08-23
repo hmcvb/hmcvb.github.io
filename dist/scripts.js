@@ -252,3 +252,6 @@ $('a[href*=#]:not([href=#])').click(function() {
       }
     }
 });
+
+// activate textarea autosize
+autosize($('textarea'));

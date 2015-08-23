@@ -41,9 +41,6 @@ a.text-danger {
   padding: 17px 22px;
   font-size: 22px;
 }
-.roster-title {
-  font-weight: 700;
-}
 .lato {
   font-family: 'Lato', sans-serif;
 }
@@ -115,8 +112,8 @@ a.text-danger {
   line-height: 30px;
 }
 #qcc-text {
-  height: 180px;
-  overflow: wrap;
+  overflow: visible;
+  resize: false;
 }
 section {
   padding-top: 70px;
@@ -140,23 +137,20 @@ section {
   }
 }
 #home,
-#roster {
+#roster,
+#contact {
   background-color: rgba(0, 0, 0, 0.7);
   color: #fff;
   font-family: 'Bitter', serif;
 }
+#about,
 #tryouts {
   background-color: #f6f6f6;
   color: #444;
 }
-#about {
-  background-color: #fff;
-}
-#roster {
-  background-color: rgba(0, 0, 0, 0.9);
-}
+#roster,
 #contact {
-  background-color: #fff;
+  background-color: rgba(0, 0, 0, 0.9);
 }
 #connect {
   background-color: #c4161c;
