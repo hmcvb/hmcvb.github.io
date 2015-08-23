@@ -25,6 +25,9 @@ a {
 a:hover {
   color: #111;
 }
+p {
+  font-size: 16px;
+}
 .btn,
 .well,
 .panel {
