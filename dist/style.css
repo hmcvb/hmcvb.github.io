@@ -111,9 +111,12 @@ a.text-danger {
   font-size: 15px;
   line-height: 30px;
 }
-#qcc-text {
+#contact-text {
   overflow: visible;
   resize: false;
+}
+#contact-submit {
+  width: 100%;
 }
 section {
   padding-top: 70px;
