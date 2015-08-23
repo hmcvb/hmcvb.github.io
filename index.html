@@ -155,25 +155,27 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-sm-8">
-            <div class="row form-group">
-                <div class="col-sm-6">
-                    <input type="text" class="form-control" id="name" name="name" placeholder="Name" required="">
+        <div class="col-sm-10 col-sm-offset-1">
+            <div class="col-sm-8">
+                <div class="row form-group">
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Name" required="">
+                    </div>
+                    <div class="col-sm-6">
+                        <input type="email" class="form-control" name="email" placeholder="Email" required="true">
+                    </div>
                 </div>
-                <div class="col-sm-6">
-                    <input type="email" class="form-control" name="email" placeholder="Email" required="true">
+                <div class="row form-group">
+                    <div class="col-sm-12">
+                        <textarea class="form-control" name="question" id="contact-text" placeholder="Questions, Comments, Concerns" required="true"></textarea>
+                    </div>
                 </div>
             </div>
-            <div class="row form-group">
-                <div class="col-sm-12">
-                    <textarea class="form-control" name="question" id="contact-text" placeholder="Questions, Comments, Concerns" required="true"></textarea>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-4">
-            <div class="row form-group">
-                <div class="col-sm-12">
-                    <button class="btn btn-default btn-lg btn-huge" id="contact-submit">Submit</button>
+            <div class="col-sm-4">
+                <div class="row form-group">
+                    <div class="col-sm-12">
+                        <button class="btn btn-default btn-lg btn-huge" id="contact-submit">Submit</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -234,7 +236,6 @@
                 <h2 class="text-center"><br>Mailing List</h2>
             </div>
             <div class="modal-body row">
-                <h6 class="text-center">COMPLETE THESE FIELDS TO SIGN UP</h6>
                 <form class="col-md-10 col-md-offset-1 col-xs-12 col-xs-offset-0">
                     <div class="form-group">
                         <input type="text" class="form-control input-lg" placeholder="Email">
