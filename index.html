@@ -306,9 +306,10 @@
                 <h2 class="text-center"><br>Mailing List</h2>
             </div>
             <div class="modal-body row">
-                <form class="col-md-10 col-md-offset-1 col-xs-12 col-xs-offset-0">
+                <form class="col-md-10 col-md-offset-1 col-xs-12 col-xs-offset-0" id="mailingForm">
                     <div class="form-group">
-                        <input type="text" class="form-control input-lg" placeholder="Email">
+                        <label for="cemail">E-Mail (required)</label>
+                        <input id="cemail" type="text" class="form-control input-lg" required>
                     </div>
                     <div class="form-group">
                         <button class="btn btn-danger btn-lg btn-block">Sign Up</button>
@@ -324,6 +325,10 @@
     
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="//ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.min.js"></script>
+    <script>
+        $("#mailingForm").validate();
+    </script>
     
     <script src="dist/scripts.js"></script>
   </body>
