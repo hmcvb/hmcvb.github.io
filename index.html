@@ -88,23 +88,9 @@
                 </div>
                 <br>
             </div>
+
             <div class="col-sm-12">
                 <div class="row">
-                    <div class="col-sm-4">
-                        <div class="row">
-                            <div class="col-sm-12 text-center">
-                                <div class="panel panel-default slideInLeft animate">
-                                    <div class="panel-heading">
-                                    <h4>Roster</h4></div>
-                                    <div class="panel-body">
-                                        <p>Find out who's on the team.</p>
-                                        <hr>
-                                        <a href="#roster" class="btn btn-danger btn-lg btn-huge btn-full lato">GO</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                     <div class="col-sm-4">
                         <div class="row">
                             <div class="col-sm-12 text-center">
@@ -120,6 +106,23 @@
                             </div>
                         </div>
                     </div>
+                    
+                    <div class="col-sm-4">
+                        <div class="row">
+                            <div class="col-sm-12 text-center">
+                                <div class="panel panel-default slideInLeft animate">
+                                    <div class="panel-heading">
+                                    <h4>Roster</h4></div>
+                                    <div class="panel-body">
+                                        <p>Find out who's on the team.</p>
+                                        <hr>
+                                        <a href="#roster" class="btn btn-danger btn-lg btn-huge btn-full lato">GO</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
                     <div class="col-sm-4">
                         <div class="row">
                             <div class="col-sm-12 text-center">
@@ -157,6 +160,9 @@
                 </p>
                 <p>
                     We will be fielding a team of 15 members, composed of undergraduates, graduates, post-docs, and faculty. If you are an affiliate of Harvard and like to play volleyball, come tryout for the team!
+                </p>
+                <p>
+                    More information about times and locations of tryouts will be posted at a later date. Sign up for our mailing list and/or tryouts to stay updated!
                 </p>
                 <br>
             </li>
@@ -229,19 +235,21 @@
         <div class="row">
             <div class="col-sm-10 col-sm-offset-1">
                 <div class="col-sm-8">
-                    <div class="row form-group">
-                        <div class="col-sm-6">
-                            <input type="text" class="form-control" id="name" name="name" placeholder="Name" required="">
+                    <form id="contactForm" method="POST" action="/bin/contactform.php">
+                        <div class="row form-group">
+                            <div class="col-sm-6">
+                                <input type="text" class="form-control" id="name" name="name" placeholder="Name" required>
+                            </div>
+                            <div class="col-sm-6">
+                                <input type="email" class="form-control" name="email" placeholder="Email" required>
+                            </div>
                         </div>
-                        <div class="col-sm-6">
-                            <input type="email" class="form-control" name="email" placeholder="Email" required="true">
+                        <div class="row form-group">
+                            <div class="col-sm-12">
+                                <textarea class="form-control" name="message" id="contact-text" placeholder="Questions, Comments, Concerns..." required></textarea>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row form-group">
-                        <div class="col-sm-12">
-                            <textarea class="form-control" name="question" id="contact-text" placeholder="Questions, Comments, Concerns" required="true"></textarea>
-                        </div>
-                    </div>
+                    </form>
                 </div>
                 <div class="col-sm-4">
                     <div class="row form-group">
@@ -309,7 +317,10 @@
                 <h2 class="text-center"><br>Mailing List</h2>
             </div>
             <div class="modal-body row">
-                <form class="col-md-10 col-md-offset-1 col-xs-12 col-xs-offset-0" id="mailingForm" method="post" action="">
+                <form class="col-md-10 col-md-offset-1 col-xs-12 col-xs-offset-0" id="mailingForm" method="POST" action="/bin/mailinglist.php">
+                    <div class="form-group">
+                        <input type="text" class="form-control input-lg" id="name" name="name" placeholder="Name" required>
+                    </div>
                     <div class="form-group">
                         <input id="cemail" type="email" name="email" class="form-control input-lg" placeholder="Email" required>
                     </div>
@@ -330,6 +341,7 @@
     <script src="//ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.min.js"></script>
     <script>
         $("#mailingForm").validate();
+        $("#contactForm").validate();
     </script>
     
     <script src="dist/scripts.js"></script>
