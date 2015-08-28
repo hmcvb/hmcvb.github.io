@@ -339,9 +339,64 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     <script src="//ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.min.js"></script>
-    <script>
+    
+    <!-- Start jQuery code -->
+    <script type="text/javascript">
+    $(document).ready(function() {
         $("#mailingForm").validate();
         $("#contactForm").validate();
+
+        $("#mailingForm").submit(function() { 
+
+            if($("#mailingForm").valid())
+            {
+                //get input field values data to be sent to server
+                post_data = {
+                    'user_name'     : $('input[name=name]').val(), 
+                    'user_email'    : $('input[name=email]').val(), 
+                };
+                
+                //Ajax post data to server
+                $.post('mailinglist.php', post_data, function(response){  
+                    if(response.type == 'error'){ //load json data from server and output message     
+                        output = '<div class="error">'+response.text+'</div>';
+                    }else{
+                        output = '<div class="success">'+response.text+'</div>';
+                        //reset values in all input fields
+                        $("#contact_form  input[required=true], #contact_form textarea[required=true]").val(''); 
+                        $("#contact_form #contact_body").slideUp(); //hide form after success
+                    }
+                    $("#contact_form #contact_results").hide().html(output).slideDown();
+                }, 'json');
+            }
+        });
+
+        $("#contactForm").submit(function() { 
+
+            if($("#contactForm").valid())
+            {
+                //get input field values data to be sent to server
+                post_data = {
+                    'user_name'     : $('input[name=name]').val(), 
+                    'user_email'    : $('input[name=email]').val(), 
+                    'msg'           : $('textarea[name=message]').val()
+                };
+                
+                //Ajax post data to server
+                $.post('mailinglist.php', post_data, function(response){  
+                    if(response.type == 'error'){ //load json data from server and output message     
+                        output = '<div class="error">'+response.text+'</div>';
+                    }else{
+                        output = '<div class="success">'+response.text+'</div>';
+                        //reset values in all input fields
+                        $("#contact_form  input[required=true], #contact_form textarea[required=true]").val(''); 
+                        $("#contact_form #contact_body").slideUp(); //hide form after success
+                    }
+                    $("#contact_form #contact_results").hide().html(output).slideDown();
+                }, 'json');
+            }
+        });
+    });
     </script>
     
     <script src="dist/scripts.js"></script>
